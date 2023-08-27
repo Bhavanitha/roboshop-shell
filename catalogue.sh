@@ -15,3 +15,4 @@ systemctl start catalogue &>>/tmp/roboshop.log
 cp mongodb.repo /etc/yum.repos.d/mongodb.repo &>>/tmp/roboshop.log
 yum install mongodb-org-shell -y &>>/tmp/roboshop.log
 mongo --host mongodb-dev.bhavanitha.site </app/schema/catalogue.js &>>/tmp/roboshop.log
+
