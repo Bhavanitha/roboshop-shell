@@ -12,6 +12,6 @@ cp /home/centos/roboshop-shell/catalogue.service /etc/systemd/system/catalogue.s
 systemctl daemon-reload
 systemctl enable catalogue
 systemctl restart catalogue
-cp /home/centos/roboshop-shell/mongodb.repo /etc/yum.repos.d/mongo.repo
+cp /home/centos/roboshop-shell/mongodb.repo /etc/yum.repos.d/mongodb.repo
 yum install mongodb-org-shell -y
 mongo --host mongodb-dev.bhavanitha.site </app/schema/catalogue.js
