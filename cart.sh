@@ -26,7 +26,7 @@ echo -e "\e[32m configure systemd services\e[0m"
 #cd /home/centos/roboshop-shell
 cp /home/centos/roboshop-shell/cart.service /etc/systemd/system/cart.service &>>/tmp/roboshop.log
 
-echo -e "\e[32m  start user service\e[0m"
+echo -e "\e[32m  start cart service\e[0m"
 systemctl daemon-reload &>>/tmp/roboshop.log
 systemctl enable cart &>>/tmp/roboshop.log
 systemctl restart cart &>>/tmp/roboshop.log
