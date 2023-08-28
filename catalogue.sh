@@ -14,6 +14,6 @@ systemctl enable catalogue
 systemctl restart catalogue
 
 echo -e "\e[33m after restart \e[0m"
-cp /home/centos/roboshop-shell/mongodb.repo /etc/yum.repos.d/mongodb.repo
+cp /home/centos/roboshop-shell/mongodb.repo /etc/yum.repos.d/mongo.repo
 yum install mongodb-org-shell -y
 mongo --host mongodb-dev.bhavanitha.site </app/schema/catalogue.js
